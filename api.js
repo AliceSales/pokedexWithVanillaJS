@@ -7,15 +7,12 @@ function getPokemonUrl(params) {
   .get(`https://pokeapi.co/api/v2/pokemon/${params}`)
 }
 
-function getPokemonsDataUrl() {
+async function getPokemonsDataUrl() {
   for(let i = 1; i <= 150; i++) {
     pokemonPromises.push(
-      getPokemonUrl(i).then(response => response.data)
+      await getPokemonUrl(i).then(response => response.data)
       .then(pokemons => {
-
         const type = pokemons.types.map(typePokemon=>typePokemon.type.name)
-
-        console.log(pokemons)
 
           let acc = `
             <li class="list__item">

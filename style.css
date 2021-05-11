@@ -59,15 +59,41 @@ header nav.header__nav h2:hover {
   color: #8db4ab;
 }
 
+header nav.header__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header nav.header__nav ul li {
+  margin: 0 2rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   font-size: 1.1rem;
   transition: color ease-in 0.3s;
 }
 
-header nav.header__nav ul a li:hover {
+header nav.header__nav ul > a {
+  color: #ffffff;
+}
+
+header nav.header__nav ul > a li:hover {
   color: #8db4ab;
+}
+
+header nav.header__nav ul li input.header__input__search {
+  width: 15rem;
+  height: 2rem;
+
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #8db4ab;
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: #313335;
+
+  text-align: center;
 }
 
 main {
