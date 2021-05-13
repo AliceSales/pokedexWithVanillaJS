@@ -12,13 +12,14 @@ async function getPokemonsDataUrl() {
     pokemonPromises.push(
       await getPokemonUrl(i).then(response => response.data)
       .then(pokemons => {
-        const type = pokemons.types.map(typePokemon=>typePokemon.type.name)
+        const majorElement = pokemons.types.map(typePokemon=>typePokemon.type.name)
+        const name = pokemons.name
 
           let acc = `
-            <li class="list__item ${type}">
+            <li class="list__item ${majorElement[0]} ${name}">
               <img src="https://pokeres.bastionbot.org/images/pokemon/${pokemons.id}.png" alt="${pokemons.name}"/>
-              <p class="name">${pokemons.id}.${pokemons.name}</p>
-              <small class="type">${type.join(' | ')}</small>
+              <p class="name">${pokemons.id}.${name}</p>
+              <small class="type">${majorElement.join(' | ')}</small>
             </li>
             `
             list.innerHTML += acc

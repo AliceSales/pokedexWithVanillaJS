@@ -134,7 +134,71 @@ main .container ul.list li.list__item img:hover {
 }
 
 main .container ul.list li.list__item p {
+  text-transform: capitalize;
   font-size: 2rem;
+}
+
+
+/* BACKGROUND BASED IN TYPES OF POKEMON */
+
+main .container ul.list li.list__item.steel {
+	background-color: #f4f4f4;
+}
+
+main .container ul.list li.list__item.fire {
+  background: #f86e62;
+}
+
+main .container ul.list li.list__item.grass {
+  background: #71d8c0;
+}
+
+main .container ul.list li.list__item.electric {
+	background-color: #f5e282;
+}
+
+main .container ul.list li.list__item.water, .ice {
+  background: #5bb0e9;
+}
+
+main .container ul.list li.list__item.ground {
+	background-color: #f5dbc2;
+}
+
+main .container ul.list li.list__item.rock {
+	background-color: #b4b4b1;
+}
+
+main .container ul.list li.list__item.fairy {
+  background: #ccb1f7;
+}
+
+main .container ul.list li.list__item.poison {
+	background-color: #98d7a5;
+}
+
+main .container ul.list li.list__item.bug {
+	background-color: #f8d5a3;
+}
+
+main .container ul.list li.list__item.dragon {
+	background-color: #97b3e6;
+}
+
+main .container ul.list li.list__item.psychic {
+	background-color: #aa91c2;
+}
+
+main .container ul.list li.list__item.flying {
+	background-color: #b6dff1;
+}
+
+main .container ul.list li.list__item.fighting {
+  background-color: #b6dff1;
+}
+
+main .container ul.list li.list__item.normal {
+	background-color: #c2a5a5;
 }
 
 
