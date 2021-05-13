@@ -15,18 +15,6 @@ a {
   cursor: pointer;
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%;
-  }
-}
-
-@media (max-width: 720px) {
-  html {
-    font-size: 87.5%;
-  }
-}
-
 body {
   background: rgba(248, 242, 242, 0.133);
   width: 100%;
@@ -81,20 +69,6 @@ header nav.header__nav ul > a li:hover {
   color: #8db4ab;
 }
 
-header nav.header__nav ul li input.header__input__search {
-  width: 15rem;
-  height: 2rem;
-
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #8db4ab;
-
-  font-size: 1rem;
-  font-weight: 500;
-  color: #313335;
-
-  text-align: center;
-}
 
 main {
   display: flex;
@@ -117,7 +91,7 @@ main .container h1.container__title {
   font-size: 3rem;
   text-align: center;
   margin-top: 1rem;
-  letter-spacing: 3rem;
+  letter-spacing: 2rem;
 }
 
 main .container ul.list {
@@ -161,4 +135,36 @@ main .container ul.list li.list__item img:hover {
 
 main .container ul.list li.list__item p {
   font-size: 2rem;
+}
+
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 487px) {
+  html {
+    font-size: 50.5%;
+  }
+  h1 {
+    font-size: 0.5rem;
+  }
+  main .container ul.list li.list__item {
+    width: 13rem;
+    height: 13rem;
+  }
+  
+  main .container ul.list li.list__item img {
+    width: 8rem;
+    height: 7rem;
+    margin-bottom: 1rem;
+  }
 }

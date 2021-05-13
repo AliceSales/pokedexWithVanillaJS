@@ -15,7 +15,7 @@ async function getPokemonsDataUrl() {
         const type = pokemons.types.map(typePokemon=>typePokemon.type.name)
 
           let acc = `
-            <li class="list__item">
+            <li class="list__item ${type}">
               <img src="https://pokeres.bastionbot.org/images/pokemon/${pokemons.id}.png" alt="${pokemons.name}"/>
               <p class="name">${pokemons.id}.${pokemons.name}</p>
               <small class="type">${type.join(' | ')}</small>
