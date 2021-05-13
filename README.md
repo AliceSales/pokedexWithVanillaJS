@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="PokedexGif" src="https://github.com/AliceSales/pokedexWithVanillaJS/blob/master/pokedex.gif" width="120px">
+  <img alt="PokedexGif" src="https://github.com/AliceSales/pokedexWithVanillaJS/blob/master/pokedex.gif" width="1200px">
 </p>
 
 ## 🧪 Technologies
