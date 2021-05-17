@@ -118,8 +118,8 @@ main .container ul.list li.list__item .item__informations p.name {
 }
 
 main .container ul.list li.list__item .item__informations .container__type small.type {
-  padding: 3px 10px;
-  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  border-radius: 10px;
   margin: 0 0.5rem;
 }
 
@@ -152,7 +152,7 @@ main .container ul.list li.list__item .item__informations .container__type small
 }
 
 main .container ul.list li.list__item .item__informations .container__type small.type.ice {
-  background: #cdebf3;
+  background: #a6d8e6;
 }
 
 main .container ul.list li.list__item .item__informations .container__type small.type.ground {
@@ -185,6 +185,10 @@ main .container ul.list li.list__item .item__informations .container__type small
 
 main .container ul.list li.list__item .item__informations .container__type small.type.fighting {
   background: #f79e63;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.ghost {
+  background: #424242;
 }
 
 main .container ul.list li.list__item .item__informations .container__type small.type.normal {
@@ -249,6 +253,10 @@ main .container ul.list li.list__item .item__image.fighting {
   background-color: #b6dff1;
 }
 
+main .container ul.list li.list__item .item__image.ghost {
+  background: #76787a;
+}
+
 main .container ul.list li.list__item .item__image.normal {
 	background-color: #c2a5a5;
 }
@@ -270,12 +278,9 @@ main .container ul.list li.list__item .item__image.normal {
   html {
     font-size: 50.5%;
   }
-  h1 {
-    font-size: 0.5rem;
-  }
   main .container ul.list li.list__item {
     width: 13rem;
-    height: 13rem;
+    height: 17rem;
   }
   
   main .container ul.list li.list__item img {
@@ -286,5 +291,8 @@ main .container ul.list li.list__item .item__image.normal {
   main .container ul.list li.list__item img:hover {
     width: 9rem;
     height: 8rem;
+  }
+  main .container ul.list li.list__item .item__informations {
+    height: 33%;
   }
 }
