@@ -10,65 +10,24 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
+p, h1, h2, h3, h4, a, img, small.type {
+  text-transform: capitalize;
   cursor: pointer;
+  text-decoration: none;
+}
+
+small {
+  cursor: default;
 }
 
 body {
-  background: rgba(248, 242, 242, 0.133);
+  background: url(./background.png) repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   font-family: roboto, sans-serif;
 }
-
-header {
-  height: 5rem;
-  background: #fb6556;
-  padding: 1.5rem;
-  color: #ffffff;
-}
-
-header nav.header__nav {
-  display: flex;
-  
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav.header__nav h2 {
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  transition: color ease-in 0.3s;
-}
-
-header nav.header__nav h2:hover {
-  color: #8db4ab;
-}
-
-header nav.header__nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header nav.header__nav ul li {
-  margin: 0 2rem;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-  font-size: 1.1rem;
-  transition: color ease-in 0.3s;
-}
-
-header nav.header__nav ul > a {
-  color: #ffffff;
-}
-
-header nav.header__nav ul > a li:hover {
-  color: #8db4ab;
-}
-
 
 main {
   display: flex;
@@ -82,16 +41,17 @@ main {
 }
 
 main .container {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
   width: 100%;
   height: 100%;
 }
 
-main .container h1.container__title {
-  color: #313335;
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 1rem;
-  letter-spacing: 2rem;
+main .container a {
+  margin: 0.75rem 0;
 }
 
 main .container ul.list {
@@ -102,102 +62,189 @@ main .container ul.list {
 }
 
 main .container ul.list li.list__item {
-  background: #2bdab1;
   color: #ffffff;
-
-  border-radius: 1rem;
   
   width: 15rem;
   height: 18rem;
   
   margin: 0.5rem;
+}
 
+main .container ul.list li.list__item .item__image {
   display: flex;
-
-  flex-direction: column;
 
   align-items: center;
   justify-content: center;
+
+  border-radius: 1rem 1rem 0 0;
+
+  height: 70%;
 }
 
-main .container ul.list li.list__item img {
+main .container ul.list li.list__item .item__image img {
   width: 10rem;
   height: 9rem;
-  cursor: pointer;
-  transition: all ease-in 0.5s;
-  margin-bottom: 2rem;
+  transition: all ease-in-out 0.5s;
+  margin-bottom: 1rem;
 }
 
-main .container ul.list li.list__item img:hover {
+main .container ul.list li.list__item .item__image img:hover {
   width: 11rem;
   height: 10rem;
 }
 
-main .container ul.list li.list__item p {
-  text-transform: capitalize;
-  font-size: 2rem;
+main .container ul.list li.list__item .item__informations {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  height: 30%;
+  background: #a09e9e;
+
+  border-radius: 0 0 1rem 1rem;
 }
 
+main .container ul.list li.list__item .item__informations p.name {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
 
-/* BACKGROUND BASED IN TYPES OF POKEMON */
+main .container ul.list li.list__item .item__informations .container__type small.type {
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin: 0 0.5rem;
+}
 
-main .container ul.list li.list__item.steel {
+main .container ul.list li.list__item .item__informations .container__type small.type:hover {
+  filter: opacity(80%);
+}
+
+/* BACKGROUND OF TYPES POKEMONS*/
+main .container ul.list li.list__item .item__informations .container__type small.type.grass {
+  background: #21773e;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.poison {
+  background: #516655;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.steel {
+  background: #6b6d6e;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.fire {
+  background: #f31f1f;
+}
+main .container ul.list li.list__item .item__informations .container__type small.type.electric {
+  background: #d6d604;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.water {
+  background: #4646d3;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.ice {
+  background: #cdebf3;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.ground {
+  background: #da7730;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.rock {
+  background: #494a4b;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.fairy {
+  background: #a148a1;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.bug {
+  background: #a39a1b;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.dragon {
+  background: #5f3417;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.psychic {
+  background: #7979c2;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.flying {
+  background: #5f9cbf;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.fighting {
+  background: #f79e63;
+}
+
+main .container ul.list li.list__item .item__informations .container__type small.type.normal {
+  background: #c36e0c;
+}
+
+/* BACKGROUND CONTAINER BASED IN TYPES OF POKEMON */
+
+main .container ul.list li.list__item .item__image.steel {
 	background-color: #f4f4f4;
 }
 
-main .container ul.list li.list__item.fire {
+main .container ul.list li.list__item .item__image.fire {
   background: #f86e62;
 }
 
-main .container ul.list li.list__item.grass {
+main .container ul.list li.list__item .item__image.grass {
   background: #71d8c0;
 }
 
-main .container ul.list li.list__item.electric {
+main .container ul.list li.list__item .item__image.electric {
 	background-color: #f5e282;
 }
 
-main .container ul.list li.list__item.water, .ice {
+main .container ul.list li.list__item .item__image.water, .ice {
   background: #5bb0e9;
 }
 
-main .container ul.list li.list__item.ground {
+main .container ul.list li.list__item .item__image.ground {
 	background-color: #f5dbc2;
 }
 
-main .container ul.list li.list__item.rock {
+main .container ul.list li.list__item .item__image.rock {
 	background-color: #b4b4b1;
 }
 
-main .container ul.list li.list__item.fairy {
+main .container ul.list li.list__item .item__image.fairy {
   background: #ccb1f7;
 }
 
-main .container ul.list li.list__item.poison {
+main .container ul.list li.list__item .item__image.poison {
 	background-color: #98d7a5;
 }
 
-main .container ul.list li.list__item.bug {
+main .container ul.list li.list__item .item__image.bug {
 	background-color: #f8d5a3;
 }
 
-main .container ul.list li.list__item.dragon {
+main .container ul.list li.list__item .item__image.dragon {
 	background-color: #97b3e6;
 }
 
-main .container ul.list li.list__item.psychic {
+main .container ul.list li.list__item .item__image.psychic {
 	background-color: #aa91c2;
 }
 
-main .container ul.list li.list__item.flying {
+main .container ul.list li.list__item .item__image.flying {
 	background-color: #b6dff1;
 }
 
-main .container ul.list li.list__item.fighting {
+main .container ul.list li.list__item .item__image.fighting {
   background-color: #b6dff1;
 }
 
-main .container ul.list li.list__item.normal {
+main .container ul.list li.list__item .item__image.normal {
 	background-color: #c2a5a5;
 }
 
