@@ -4,20 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: default;
 }
 
 ul {
   list-style: none;
 }
 
-p, h1, h2, h3, h4, a, img, small.type {
+p, h1, h2, h3, a, img, small.type {
   text-transform: capitalize;
   cursor: pointer;
   text-decoration: none;
-}
-
-small {
-  cursor: default;
 }
 
 body {
@@ -117,81 +114,83 @@ main .container ul.list li.list__item .item__informations p.name {
   margin-bottom: 0.5rem;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type {
+small.type {
+  text-align: center;
   padding: 0.4rem 0.7rem;
   border-radius: 10px;
   margin: 0 0.5rem;
+  font-weight: 500;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type:hover {
+small.type:hover {
   filter: opacity(80%);
 }
 
 /* BACKGROUND OF TYPES POKEMONS*/
-main .container ul.list li.list__item .item__informations .container__type small.type.grass {
+small.type.grass {
   background: #21773e;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.poison {
+small.type.poison {
   background: #516655;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.steel {
+small.type.steel {
   background: #6b6d6e;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.fire {
+small.type.fire {
   background: #f31f1f;
 }
-main .container ul.list li.list__item .item__informations .container__type small.type.electric {
+small.type.electric {
   background: #d6d604;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.water {
+small.type.water {
   background: #4646d3;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.ice {
+small.type.ice {
   background: #a6d8e6;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.ground {
+small.type.ground {
   background: #da7730;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.rock {
+small.type.rock {
   background: #494a4b;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.fairy {
+small.type.fairy {
   background: #a148a1;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.bug {
+small.type.bug {
   background: #a39a1b;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.dragon {
+small.type.dragon {
   background: #5f3417;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.psychic {
+small.type.psychic {
   background: #7979c2;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.flying {
+small.type.flying {
   background: #5f9cbf;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.fighting {
+small.type.fighting {
   background: #f79e63;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.ghost {
+small.type.ghost {
   background: #424242;
 }
 
-main .container ul.list li.list__item .item__informations .container__type small.type.normal {
+small.type.normal {
   background: #c36e0c;
 }
 
@@ -279,7 +278,7 @@ main .container ul.list li.list__item .item__image.normal {
     font-size: 50.5%;
   }
   main .container ul.list li.list__item {
-    width: 13rem;
+    width: 15rem;
     height: 17rem;
   }
   
